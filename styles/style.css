@@ -158,6 +158,33 @@ nav ul li i {
 }
 
 /* ------featured section ends here---- */
+/* ------footer section starts here---- */
+.footer-section {
+  background-color: #0a0826;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section h1 {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 3px;
+}
+.footer-section p {
+  color: #d9dbe1;
+}
+.reserved {
+  margin-bottom: 17px;
+}
+.social i {
+  color: white;
+  margin-right: 16px;
+}
+.social {
+  margin-bottom: 40px;
+}
+/* ------footer section ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   .banner {
@@ -206,5 +233,10 @@ nav ul li i {
   }
   .featured {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
