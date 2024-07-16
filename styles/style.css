@@ -123,6 +123,9 @@ nav ul li i {
 .card-rating-des i {
   color: #fb8200;
 }
+.card img {
+  width: 100%;
+}
 .see {
   font-size: 1rem;
   font-weight: 700;
@@ -233,10 +236,5 @@ nav ul li i {
   }
   .featured {
     flex-direction: column-reverse;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 700px) {
-  .card-container {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
