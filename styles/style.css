@@ -64,18 +64,70 @@ nav ul li i {
   align-items: start;
 }
 .banner-image {
-  width: 100%;
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner-image img {
   width: 100%;
 }
+.cart,
+.bars {
+  display: none;
+}
 /* ------header section ends here---- */
+/* ------logos section starts here---- */
+.logos {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ------logos section ends here---- */
+/* ------collection section starts here---- */
+.collection {
+  width: 70%;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.collection h1 {
+  text-align: center;
+  margin-bottom: 47px;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
+  margin-bottom: 47px;
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.card-rating-des {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #787885;
+}
+.card-rating-des i {
+  color: #fb8200;
+}
+/* ------collection section ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
-  nav,
   .banner {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
   }
   .banner-content {
     align-items: center;
@@ -88,6 +140,18 @@ nav ul li i {
   nav ul {
     flex-direction: column;
   }
+  .cart,
+  .bars {
+    display: inline;
+    font-size: 20px;
+  }
+  .menu {
+    display: none;
+  }
+  .card-container,
+  .logos {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -99,5 +163,8 @@ nav ul li i {
   .banner-content {
     align-items: center;
     text-align: center;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
