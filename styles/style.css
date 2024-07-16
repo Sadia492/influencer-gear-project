@@ -123,7 +123,41 @@ nav ul li i {
 .card-rating-des i {
   color: #fb8200;
 }
+.see {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e02c6dde;
+  text-align: right;
+  cursor: pointer;
+}
 /* ------collection section ends here---- */
+/* ------featured section starts here---- */
+.featured {
+  justify-content: center;
+  gap: 96px;
+}
+.featured-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.featured-content h1 {
+  font-size: 2.37rem;
+  font-weight: 700;
+  color: #0a0826;
+}
+.featured-content p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c6c6c;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.featured-image img {
+  width: 100%;
+}
+
+/* ------featured section ends here---- */
 /* responsive for smaller devices */
 @media screen and (max-width: 576px) {
   .banner {
@@ -152,6 +186,9 @@ nav ul li i {
   .logos {
     grid-template-columns: repeat(1, 1fr);
   }
+  .featured {
+    flex-direction: column-reverse;
+  }
 }
 /* responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -166,5 +203,8 @@ nav ul li i {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .featured {
+    flex-direction: column-reverse;
   }
 }
